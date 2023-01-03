@@ -724,9 +724,10 @@ ul {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.modal-img {
+.modal-svg {
   width: 8px;
   height: 8px;
+  fill: #2E2F42;
 }
 
 /* Цвет основного текста Roboto 400 #434455*/
