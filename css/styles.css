@@ -572,7 +572,7 @@ ul {
   background-color: var(--primary-brand-color);
   opacity: 0;
   transform: translateY(100%);
-  transition: transform 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function), opacity 250ms var(--timing-function);
 }
 
 .work-card:hover .overlay::before, 
@@ -716,6 +716,9 @@ ul {
   right: 24px;
   width: 24px;
   height: 24px;
+  padding: 0;
+  margin: 0;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -723,11 +726,20 @@ ul {
   background-color: var(--accent-color);
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
+.modal-btn:hover, .modal-btn:focus {
+  background-color: var(--hover-color);
+}
+
 .modal-svg {
   width: 8px;
   height: 8px;
   fill: #2E2F42;
+}
+.modal-btn:hover .modal-svg,
+.modal-btn:focus .modal-svg {
+  fill: #FFFFFF;
 }
 
 /* Цвет основного текста Roboto 400 #434455*/
