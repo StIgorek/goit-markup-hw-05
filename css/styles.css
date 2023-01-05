@@ -95,17 +95,19 @@
   width: auto;
 }
 
-.nav .link {
+.site-nav .link {
   font-weight: 500;
   color: var(--title-text-color);
+  transition: color 250ms var(--timing-function);
 }
 
-.nav .link:hover,
-.nav .link:focus {
+.site-nav .link:hover,
+.site-nav .link:focus {
   color: var(--primary-text-color);
+  transition: color 250ms var(--timing-function);
 }
 
-.nav .link:active {
+.site-nav .link:active {
   color: var(--primary-brand-color);
 }
 
@@ -137,11 +139,13 @@
  
 .contact .link {
   color: var(--primary-text-color);
+  transition: color 250ms var(--timing-function);
 }
 
 .contact .link:hover,
 .contact .link:focus {
   color: var(--primary-brand-color);
+  transition: color 250ms var(--timing-function);
 }
 
 .contact {
@@ -205,6 +209,7 @@
   padding: 16px 32px;
   border-radius: 4px;
   margin-top: 48px;
+  transition: background-color 250ms var(--timing-function), border-color 250ms var(--timing-function);
 }
 
 .main-button:hover,
@@ -213,6 +218,7 @@
   border-color: var(--hover-color);
   color: var(--primary-bg-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms var(--timing-function), border-color 250ms var(--timing-function);
 }
 
 .main-button:active {
@@ -345,10 +351,12 @@ ul {
   background-color: var(--primary-brand-color);
   border-radius: 50%;
   display: flex;
+  transition: background-color 250ms var(--timing-function);
 }
 .smm-container:hover,
 .smm-container:focus {
   background-color: var(--hover-color);
+  transition: background-color 250ms var(--timing-function);
 }
 
 .smm-icon {
@@ -396,23 +404,27 @@ ul {
   align-items: center;
   color: #8E8F99;
   border: 1px solid #8E8F99;
+  transition: color 250ms var(--timing-function), border 250ms var(--timing-function);
 }
 
 .company:hover,
 .company:focus {
   border: 1px solid var(--hover-color);
   color: var(--hover-color);
+  transition: color 250ms var(--timing-function), border 250ms var(--timing-function);
 }
 
 .client {
   width: 104px;
   height: 56px;
   fill: currentColor;
+  transition: fill 250ms var(--timing-function);
 }
 
 .client:hover,
 .client:focus {
   fill: var(--hover-color);
+  transition: fill 250ms var(--timing-function);
 }
 
 /*Footer*/
@@ -487,19 +499,21 @@ ul {
   margin-right: 16px;
 }
 
+.social {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms var(--timing-function);
+}
+
 .social:hover,
 .social:focus {
   background-color: #31D0AA;
   border-radius: 50%;
-}
-
-.social {
-  width: 100%;
-  height: 100%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  transition: background-color 250ms var(--timing-function);
 }
 
 .social-icon {
@@ -528,6 +542,7 @@ ul {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
   padding: 8px 16px;
+  transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
 }
 
 .button:hover,
@@ -535,6 +550,7 @@ ul {
   background-color: var(--hover-color);
   color: var(--primary-bg-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
 }
 
 .btn {
@@ -578,6 +594,7 @@ ul {
 .work-card:hover .overlay::before, 
 .work-card:focus .overlay::before {
   transform: translateY(0);
+  transition: transform 250ms var(--timing-function), opacity 250ms var(--timing-function);
   opacity: 1;
 }
 
@@ -615,10 +632,12 @@ ul {
 .work-card {
   display: block;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  transition: box-shadow 250ms var(--timing-function);
 }
 .work-card:hover,
 .work-card:focus {
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+transition: box-shadow 250ms var(--timing-function);
 }
 
 .image {
@@ -727,19 +746,23 @@ ul {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  transition: background-color 250ms var(--timing-function);
 }
 .modal-btn:hover, .modal-btn:focus {
   background-color: var(--hover-color);
+  transition: background-color 250ms var(--timing-function);
 }
 
 .modal-svg {
   width: 8px;
   height: 8px;
   fill: #2E2F42;
+  transition: fill 250ms var(--timing-function);
 }
 .modal-btn:hover .modal-svg,
 .modal-btn:focus .modal-svg {
   fill: #FFFFFF;
+  transition: fill 250ms var(--timing-function);
 }
 
 /* Цвет основного текста Roboto 400 #434455*/
